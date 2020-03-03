@@ -2,6 +2,13 @@
 using namespace std;
 
 //Write the definition of myString() here
+void myString(char * &x,int y){
+	x=new char[y];
+	for(int i=0; i<y; i++){
+		x[i]='A'+i;
+	}
+
+}
 
 int main(){
 	char *p;
@@ -13,3 +20,4 @@ int main(){
 	delete [] p;
 	return 0;
 }
+
